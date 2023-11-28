@@ -1,2 +1,5 @@
 import Home from "@/components/home";
-export default Home;
+
+const Hompage = ()=><Home />
+
+export default Hompage

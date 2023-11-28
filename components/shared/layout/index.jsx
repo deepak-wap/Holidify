@@ -509,7 +509,7 @@ const Structure = ({ children, title = "Holidify" })=>{
       </Head>
       <header>
         {/* Top Nav */}
-        <nav className="bg-white dark:bg-gray-900 w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600 xl:px-[7.90%]">
+        <nav className={`bg-white dark:bg-gray-900 w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600 pl-[8%] pr-[8.8%] ${scrollHeight > 150 ? 'fixed' : ''}`}>
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-3 py-3">
             <Link
               href="/"
@@ -521,18 +521,6 @@ const Structure = ({ children, title = "Holidify" })=>{
                 className="w-[114px] h-[55px]"
               />
             </Link>
-            <div className="flex space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <div className="relative ml-2">
-                <div className="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
-                  <i className="bx bx-search text-[23px] text-gray-500"></i>
-                </div>
-                <input
-                  type="search"
-                  className="outline-none shadow-inner shadow-md border border-1 rounded-[4px] w-[398px] h-[43px] py-[26px] ps-[37px] text-[17px] tracking-[0.3px] placeholder:text-slate-500"
-                  placeholder="Search for places to visit"
-                />
-              </div>
-            </div>
             <div
               className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
               id="navbar-sticky"
@@ -614,26 +602,10 @@ const Structure = ({ children, title = "Holidify" })=>{
             <p>Some contents...</p>
           </Drawer>
         </nav>
-
-        {/* Bottom Nav */}
-        <nav
-          className={`${
-            scrollHeight >= 79 ? "fixed top-0 left-0" : ""
-          } w-full bg-[#F1F1F1] z-20 top-0 border-gray-200 dark:border-gray-600 shadow-lg`}
-        >
-          <div className="grid grid-cols-1">
-            <Menu
-              theme="light"
-              mode="horizontal"
-              items={bottomNav}
-              className="pt-2 pb-3 px-6 border border-[3px] xl:px-[7.6%]"
-            />
-          </div>
-        </nav>
       </header>
       <section>{children}</section>
       <footer>
-        <div className="flex flex-col lg:flex-row lg:gap-20 px-8 xl:px-[7.6%] border border-t-[1px]">
+        <div className="flex flex-col lg:flex-row lg:gap-[71px] pl-[9%] pr-[9.80%] border border-t-[1px]">
           <div className="py-7 lg:py-16">
             <img
               src="images/logo.svg"
