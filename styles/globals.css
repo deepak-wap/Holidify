@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+  font-family: "Manrope",sans-serif;
+}
+
 /* For hiding the vertical scrollbar */
 .scroll::-webkit-scrollbar {
     width: 0;
@@ -22,4 +27,45 @@
   .thumb::-webkit-scrollbar-thumb {
     background-color: transparent;
   }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 15px 20px;
+  }
+
+  /* Hide the default arrow */
+.currency-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+/* Example CSS to change the dropdown color */
+/* class="ant-menu ant-menu-root ant-menu-inline ant-menu-light custom-dropdown-menu css-dev-only-do-not-override-xu9wm8" */
+.ant-drawer-body{
+  padding: 20px 0 !important;
+}
+.ant-menu-submenu-title{
+  color: black !important;
+  width: 100% !important;
+}
+
+.ant-menu-submenu-title:hover {
+  background-color: inherit !important;
+}
+
+.ant-menu-root{
+  border: none !important;
+}
+
+.ant-menu-submenu-arrow {
+  display: none !important;
+}
+
+
+
   
