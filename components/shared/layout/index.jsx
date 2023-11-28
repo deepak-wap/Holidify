@@ -534,7 +534,7 @@ const Structure = ({ children, title = "Holidify" })=>{
                   >
                     <span className="hover:border-b-[5px] border-[#3D81BB] py-6">
                       <Space>
-                        <span className="xl:text-[18px]">Explore</span>
+                        <span className="header-menu">Explore</span>
                         <DownOutlined />
                       </Space>
                     </span>
@@ -543,7 +543,7 @@ const Structure = ({ children, title = "Holidify" })=>{
                 <li>
                   <a
                     href="#"
-                    className="xl:text-[18px] hover:border-b-[5px] border-[#3D81BB] py-6"
+                    className="join hover:border-b-[5px] border-[#3D81BB] py-6"
                   >
                     Join as travel agent
                   </a>
@@ -551,7 +551,7 @@ const Structure = ({ children, title = "Holidify" })=>{
                 <li>
                   <a
                     href="#"
-                    className="xl:text-[18px] text-rose-500 font-semibold hover:border-b-[5px] border-[#3D81BB] py-6"
+                    className="login text-rose-500 hover:border-b-[5px] border-[#3D81BB] py-6"
                   >
                     Log in/Sign up
                   </a>
