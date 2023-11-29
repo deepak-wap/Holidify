@@ -1,6 +1,7 @@
 import Structure from "../shared/layout";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Card } from 'antd'
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -60,12 +61,56 @@ const Home = ()=>{
                             />
                         </div>
                 </div>
-                <div className="grid grid-cols-12 mt-20">
-                    <div className="col-span-8 border border-1 h-[500px]">
-                        <h1 className="w-full border border-1">Explore the world with Holidify</h1>
+                <div className="grid grid-cols-12 mt-[46px]">
+                    <div className="col-span-8 h-[500px]">
+                        <div className="mb-[45px]">
+                            <h1 className="mb-1 w-full text-[#333333] text-[21.7px] font-[manrope] font-bold tracking-[0px]">
+                                Explore the world with Holidify
+                            </h1>
+                            <a href="/">
+                                <Card
+                                    // title="Card title"
+                                    // bordered={true}
+                                    className="w-[724px] h-[110px] px-[54.5px] shadow-[0_2px_4px_0_rgba(178,178,178,0.5)]"
+                                >
+                                <div className="flex gap-[174px] mt-[-3px]">
+                                    <div>
+                                        <a href="/" className="flex flex-col gap-[7px] hover:text-[#333333] hover:underline">
+                                            <Image src={'/images/traveller.png'} width={33} height={33} className="ml-5"/>
+                                            <span className="text-[#333333] text-[16.5px] font-[manrope] font-bold tracking-[0.5px]">
+                                                Packages
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="/" className="flex flex-col gap-[7px] hover:text-[#333333] hover:underline">
+                                            <Image src={'/images/sleeping.png'} width={33} height={33} className="ml-[7px]"/>
+                                            <span className="text-[#333333] text-[16.5px] font-[manrope] font-bold tracking-[0.2px]">
+                                                Hotels
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="/" className="flex flex-col gap-[7px] hover:text-[#333333] hover:underline">
+                                            <Image src={'/images/explore.png'} width={33} height={33} className="ml-[22px]"/>
+                                            <span className="text-[#333333] text-[16.5px] font-[manrope] font-bold tracking-[0.5px] ml-[10px]">
+                                                Explore
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>                            
+                                </Card>
+                            </a>
+                        </div>
+                        <div>
+                            <h1 className="pb-[7px] w-full text-[#333333] text-[21px] font-[manrope] font-bold tracking-[0.3px] border-b border-gray-300">
+                                Countries you can explore
+                            </h1>
+                        </div>
+
                     </div>
-                    <div className="col-span-4 border border-1 h-[500px]">
-                        <h1 className="w-full border border-1">Recent Articles</h1>
+                    <div className="col-span-4 px-4 h-[500px]">
+                        <h1 className="w-full text-[#333333] text-[21.7px] font-[manrope] font-bold tracking-[0px]">Recent Articles</h1>
                     </div>
                 </div>
             </div>
