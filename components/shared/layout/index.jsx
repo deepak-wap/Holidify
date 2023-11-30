@@ -509,7 +509,7 @@ const Structure = ({ children, title = "Holidify" })=>{
       </Head>
       <header>
         {/* Top Nav */}
-        <nav className={`bg-white dark:bg-gray-900 w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600 pl-[8%] pr-[8.8%] ${scrollHeight > 150 ? 'fixed' : ''}`}>
+        <nav className={`bg-white dark:bg-gray-900 w-full z-[100] top-0 border-b border-gray-200 dark:border-gray-600 pl-[8%] pr-[8.8%] ${scrollHeight > 150 ? 'fixed' : ''}`}>
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-3 py-3">
             <Link
               href="/"
@@ -551,7 +551,7 @@ const Structure = ({ children, title = "Holidify" })=>{
                 <li>
                   <a
                     href="#"
-                    className="login text-rose-500 hover:border-b-[5px] border-[#3D81BB] py-6"
+                    className="login text-rose-500 hover:border-b-[5px] border-[#3D81BB] py-6 hover:text-black"
                   >
                     Log in/Sign up
                   </a>
