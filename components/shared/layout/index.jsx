@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { Dropdown, Space, Menu, Drawer, Button } from "antd";
+import { Dropdown, Space, Menu, Drawer, Button, Modal, Input, Image } from "antd";
 import {
   DownOutlined,
-  SmileOutlined
+  SmileOutlined,
+  CloseOutlined,
+  EyeInvisibleOutlined,
+  EyeTwoTone,
+  UserOutlined,
+  MailFilled,
+  EyeOutlined,
 } from "@ant-design/icons";
 
 const Structure = ({ children, title = "Holidify" })=>{
   const [scrollHeight, setScrollHeight] = useState(0);
-
+  const [passwordVisible, setPasswordVisible] = React.useState(false);
   useEffect(()=>{
     const handleScroll = ()=>{
       const currentScrollHeight =
@@ -27,6 +33,17 @@ const Structure = ({ children, title = "Holidify" })=>{
       };
     }
   }, []);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState("1");
@@ -550,11 +567,71 @@ const Structure = ({ children, title = "Holidify" })=>{
                 </li>
                 <li>
                   <a
-                    href="#"
+                    onClick={showModal}
                     className="login text-rose-500 hover:border-b-[5px] border-[#3D81BB] py-6 hover:text-black"
                   >
                     Log in/Sign up
                   </a>
+                  <Modal 
+                    title={<h1 className="border-b-[1px] border-black pb-[7px] text-[#333333] text-[21.3px] text-center font-[manrope] tracking-[-0.1px] font-bold mt-[-5px]">Log in to your account</h1>} 
+                    open={isModalOpen} 
+                    onOk={handleOk} 
+                    onCancel={handleCancel}
+                    closeIcon ={<CloseOutlined className="text-[20px] mt-[4px]"/>}
+                  >
+                    <div className="mt-10 px-[26px]">
+                      <h1 className="text-[#333333] text-[19px] font-[manrope] font-bold tracking-[-0.1] mt-[-4px] mb-4">
+                        Welcome to Holidify
+                      </h1>
+                      <Input 
+                        placeholder="Enter Email ID"
+                        prefix={<i class='bx bxs-envelope text-[22px] text-[#808080]'></i>}
+                        className="mb-3 pl-[20px] w-[100%] h-[49px] rounded-[5px] border-slate-500 font-[manrope]"
+                      />
+                      <Input.Password
+                        placeholder="Enter Password"
+                        prefix={<i class='bx bxs-lock-alt text-[22px] text-[#808080]'></i>}
+                        className="mb-[7px] pl-[20px] w-[100%] h-[49px] rounded-[5px] border-slate-500 font-[manrope]" 
+                      />
+                      
+                      <div className="w-full flex justify-center">
+                        <Button className="border border-0 mb-8">
+                          <div className="w-[210px] bg-[#ff433a] py-[13px]">
+                            <a href="/" className="text-[16.5px] text-white tracking-[0.3px] font-[manrope] font-semibold">Continue</a>
+                          </div>
+                        </Button>
+                      </div>
+                      <div className="flex justify-center mb-[22.88px]">
+                        <a href="/" className="text-[16.5px] text-[#0056b3] font-[manrope] font-semibold tracking-[0.3px]">
+                          Forget Password?
+                        </a>
+                      </div>
+                      <div className="flex items-center mb-5">
+                        <span className="flex-grow border-b border-[#858585] font-[manrope]"></span>
+                        <span className="text-[#212529] text-[16.4px] font-[manrope] font-bold mx-[10px] m-[0.10px]"> OR </span>
+                        <span className="flex-grow border-b border-[#858585] font-[manrope]"></span>
+                      </div>
+                      <div className="flex flex-col justify-center">
+                        <Button className="mb-[10px] rounded-[4px]  border border-1 border-[#3e82f7] h-[55px]">
+                            <div className="flex justify-center items-center ml-[10px]">
+                              <Image src={'/images/google.png'} width={20} height={20} />
+                              <span className="text-[16.5px] ml-[-4px] font-[manrope] font-bold tracking-[0.1px]">
+                                Sign in with Google
+                              </span>
+                            </div>
+                        </Button>
+
+                        <Button className="rounded-[4px]  border border-1 border-[#3e82f7] h-[55px]">
+                            <div className="flex justify-center items-center ml-[10px]">
+                              {/* <Image src={'/images/google.png'} width={20} height={20} /> */}
+                              <span className="text-[16.5px] ml-[-4px] font-[manrope] font-bold tracking-[0.1px]">
+                                Sign up with Email
+                              </span>
+                            </div>
+                        </Button>
+                      </div>
+                    </div>
+                </Modal>
                 </li>
               </ul>
             </div>
