@@ -538,6 +538,18 @@ const Structure = ({ children, title = "Holidify" })=>{
                 className="w-[114px] h-[55px]"
               />
             </Link>
+            <div className="flex space-x-3 md:space-x-0 rtl:space-x-reverse">
+              <div className="relative ml-2">
+                <div className="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">
+                  <i className="bx bx-search text-[23px] text-gray-500"></i>
+                </div>
+                <input
+                  type="search"
+                  className="outline-none shadow-inner shadow-md border border-1 rounded-[4px] w-[398px] h-[43px] py-[26px] ps-[37px] text-[17px] tracking-[0.3px] placeholder:text-slate-500"
+                  placeholder="Search for places to visit"
+                />
+              </div>
+            </div>
             <div
               className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
               id="navbar-sticky"
