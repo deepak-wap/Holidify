@@ -27,6 +27,11 @@ body {
     background-color: transparent;
   }
 
+  .header-menu{
+    font-size: 17.3px !important;
+    font-weight: 700 !important;
+  }
+  
   .navbar {
     position: sticky;
     top: 0;

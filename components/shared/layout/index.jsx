@@ -543,17 +543,15 @@ const Structure = ({ children, title = "Holidify" })=>{
               id="navbar-sticky"
             >
               <ul className="hidden lg:inline-flex flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li className="hover:underline underline-offset-[33px] decoration-sky-500">
+                <li className="hover:underline underline-offset-[33px] decoration-sky-500 mr-[-4px]">
                   <Dropdown
                     menu={{
                       items,
                     }}
                   >
                     <span className="hover:border-b-[5px] border-[#3D81BB] py-6">
-                      <Space>
-                        <span className="header-menu">Explore</span>
-                        <DownOutlined />
-                      </Space>
+                        <span className="header-menu mr-1">Explore</span>
+                        <DownOutlined className="text-[14px] mr-2"/>
                     </span>
                   </Dropdown>
                 </li>
