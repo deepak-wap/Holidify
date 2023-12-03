@@ -128,7 +128,7 @@ const Explore = ()=>{
             {
                 key: 'chiang-mai',
                 label: 'Chiang Mai',
-                src: '/images/CHIANG-MAI.jpg'
+                src: '/images/CHIANG-MAI.jpg',
             },
           ],
           menu: true,
