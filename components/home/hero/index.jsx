@@ -7,13 +7,13 @@ const Hero = ()=>{
     return (
         <>
             <div className="">
-                <div className="absolute h-[400px] w-full bg-black bg-opacity-[0.4] hover:bg-opacity-[0.5] rounded-[4px] z-20"></div>
-                <div className="w-full overflow-hidden">
+                <div className="absolute h-[400px] w-full bg-black bg-opacity-[0.5] hover:bg-opacity-[0.6] rounded-[4px] z-20"></div>
+                <div className="w-full h-[400px] overflow-hidden">
                     <Image 
                         src={'/images/package-1.jpg'} 
-                        width={100} 
-                        height={100} 
-                        className='w-full h-[400px] rounded-[4px]'
+                        width={720} 
+                        height={480} 
+                        className='w-full h-[437px] rounded-[4px]'
                     />
                 </div>           
                 <div className="mt-[-180px] px-[120px] z-20 absolute w-fit flex flex-col">
