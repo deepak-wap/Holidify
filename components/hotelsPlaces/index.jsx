@@ -258,7 +258,7 @@ const HotelsPlaces = () => {
                 </div>
               </div>
               <div className="flex gap-2">
-                <div className="ml-[-7px] pl-[3px] w-[198px] h-[48px] bg-[#4F9CD8] rounded-[5px] shadow-lg shadow-inner overflow-hidden">
+                <div className="ml-[-7px] pl-[3px] w-[198px] h-[48px] bg-[#FF433E] rounded-[5px] shadow-lg shadow-inner overflow-hidden">
                   <div className="w-[195px] h-[48px] rounded-[4px] bg-white">
                     <DatePicker className="check-out border-0" placeholder="Check Out" />
                   </div>
