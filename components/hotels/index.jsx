@@ -16,10 +16,10 @@ import {
   EffectFade,
 } from "swiper/modules";
 import Structure from "../shared/layout";
-import { Button, Card, Menu, Input, DatePicker } from "antd";
+import { Button, Card, Menu, Input, DatePicker, Checkbox } from "antd";
 import { DownOutlined, SearchOutlined } from "@ant-design/icons";
 
-const HotelsPlaces = () => {
+const Hotels = () => {
   const countries = [
     {
       key: 1,
@@ -237,7 +237,49 @@ const HotelsPlaces = () => {
 
   return (
     <>
-      <Structure title="hotels-places">
+      <Structure title="hotels">
+        <div className="grid grid-cols-12 px-[8.8%] py-8">
+          <div className="col-span-3">
+            <Card className="p-0 m-0 shadow-md w-[263px]" >
+              <div className="w-full ml-[-9px] mt-[-2px]">
+                <div className="w-full flex justify-between mb-[18px]">
+                    <span className="text-[#212529] text-[16px] font-[manrope] font-bold tracking-[0.3px]">
+                      Filter By
+                    </span>
+                    <span className="text-[#949494] text-[16.45px] font-[manrope] tracking-[0.3px] mr-[-24px] mt-[-1px] hover:underline cursor-pointer">
+                      Reset All
+                    </span>
+                </div>
+
+                <div className="main pl-2 ml-[-9px]">
+                  <div className="mb-7"> {/* repeat */}
+                    <div className="mb-4">
+                      <h2 className="text-[#212529] text-[16.3px] font-[manrope] font-bold tracking-[0.3px]">
+                        Popular Filters
+                      </h2>
+                    </div>
+                    <div className="flex gap-2 mb-2"> {/* repeat */}
+                      <Checkbox defaultChecked={true} className="text-[#212529]"/>
+                      <div className="w-full flex justify-between">
+                        <span className="text-[#212529] text-[14.6px] font-[manrope]">
+                          Breakfast Included
+                        </span>
+                        <span className="text-[#949494] text-[14.6px] font-[manrope] mr-[-19px]">363</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+          <div className="col-span-8">
+            <Swiper>
+              <SwiperSlide>
+                {/* <Image /> */}
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
         <div className="mt-5 px-[8.8%]">
           <h1 className="text-[25px]  font-[manrope] tracking-[0.3px] font-bold mb-2">
             Hotels & places to stay
@@ -254,19 +296,26 @@ const HotelsPlaces = () => {
             <div className="flex gap-9">
               <div className="ml-[-7px] pl-[3px] w-[198px] h-[48px] bg-[#4F9CD8]  rounded-[5px] shadow-lg shadaw-[red] shadow-inner overflow-hidden">
                 <div className="w-[195px] h-[48px] rounded-[4px] bg-white">
-                  <DatePicker className="check-in border-0" placeholder="Check In" />
+                  <DatePicker
+                    className="check-in border-0"
+                    placeholder="Check In"
+                  />
                 </div>
               </div>
               <div className="flex gap-2">
                 <div className="ml-[-7px] pl-[3px] w-[198px] h-[48px] bg-[#4F9CD8] rounded-[5px] shadow-lg shadow-inner overflow-hidden">
                   <div className="w-[195px] h-[48px] rounded-[4px] bg-white">
-                    <DatePicker className="check-out border-0" placeholder="Check Out" />
+                    <DatePicker
+                      className="check-out border-0"
+                      placeholder="Check Out"
+                    />
                   </div>
                 </div>
                 <div className="relative flex gap-2">
-                  <Image src={"/images/user.png"} 
-                    width={20} 
-                    height={22} 
+                  <Image
+                    src={"/images/user.png"}
+                    width={20}
+                    height={22}
                     className="absolute h-[22px] top-[13px] left-[8px]"
                   />
                   <select
@@ -410,4 +459,4 @@ const HotelsPlaces = () => {
   );
 };
 
-export default HotelsPlaces;
+export default Hotels;

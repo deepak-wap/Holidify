@@ -267,5 +267,26 @@ font-weight: 700;
     color: white !important;
     border: none !important;
     outline: none !important;
-  } 
-  /* css-dev-only-do-not-override-xu9wm8 ant-btn-default px-5 h-[55px] font-[manrope] text-[16px] text-white bg-gradient-to-r from-[#ff433a] to-[#ff577c] tracking-[0.3px] font-bold */
+  }
+
+  .ant-menu-submenu::after{
+    border-bottom: none !important;
+    outline: none !important;
+  }
+
+  .ant-menu-item::after{
+    display: none !important;
+  }
+
+  :where(.css-dev-only-do-not-override-xu9wm8).ant-menu-horizontal .ant-menu-item{
+    padding-inline: 0 27px !important;
+  }
+
+ .ant-checkbox-inner{
+    width: 25px !important;
+    height: 24px !important;
+  }
+
+  /* .ant-checkbox-inner::after {
+    font-size: 20px !important;
+  } */

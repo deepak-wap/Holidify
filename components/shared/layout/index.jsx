@@ -382,55 +382,55 @@ const Structure = ({ children, title = "Holidify" })=>{
     {
       key: 1,
       label: (
-        <span className="pb-3 text-[17.4px] text-[#3d81bb] font-semibold font-mono border-b-[5px] border-[#3D81BB] py-5">
-          Singapore
+        <span className="pb-3 text-[16.5px] tracking-[0.3px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
+          Haridwar
         </span>
       ),
     },
     {
       key: 2,
       label: (
-        <span className="pb-3 text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono hover:border-b-[5px] border-[#3D81BB] py-5">
-          Things To Do
+        <span className="pb-3 text-[16.5px] tracking-[0.3px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
+          Places To Visit
         </span>
       ),
     },
     {
       key: 3,
       label: (
-        <span className="pb-3 text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono hover:border-b-[5px] border-[#3D81BB] py-5">
-          Packages
+        <span className="pb-3 text-[16.5px] tracking-[0.3px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
+          Hotels
         </span>
       ),
     },
     {
       key: 4,
       label: (
-        <span className="pb-3 text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono hover:border-b-[5px] border-[#3D81BB] py-5">
-          Hotels
+        <span className="pb-3 text-[16.5px] tracking-[0.3px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
+          How To Reach
         </span>
       ),
     },
     {
       key: 5,
       label: (
-        <span className="pb-3 text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono hover:border-b-[5px] border-[#3D81BB] py-5">
-          How To Reach
+        <span className="pb-3 text-[16.5px] tracking-[0.3px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
+          Best Time To Visit
         </span>
       ),
     },
     {
       key: 6,
       label: (
-        <span className="pb-3 text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono hover:border-b-[5px] border-[#3D81BB] py-5">
-          Best Time To Visit
+        <span className="pb-3 text-[16.5px] tracking-[0.3px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
+          Packages
         </span>
       ),
     },
     {
       key: 7,
       label: (
-        <span className="pb-3 text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono hover:border-b-[5px] border-[#3D81BB] py-5">
+        <span className="pb-3 text-[16.5px] tracking-[0.3px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
           Photos
         </span>
       ),
@@ -438,15 +438,15 @@ const Structure = ({ children, title = "Holidify" })=>{
     {
       key: 8,
       label: (
-        <span className="pb-3 text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono hover:border-b-[5px] border-[#3D81BB] py-5">
-          Visa
+        <span className="pb-3 text-[16.5px] tracking-[0.3px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
+          Food
         </span>
       ),
     },
     {
       key: 9,
       label: (
-        <span className="pb-3 text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono hover:border-b-[5px] border-[#3D81BB] py-5">
+        <span className="ml-[-16px] pb-3 text-[16.5px] tracking-[0.3px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
           More <DownOutlined />
         </span>
       ),
@@ -454,7 +454,7 @@ const Structure = ({ children, title = "Holidify" })=>{
         {
           key: 9.1,
           label: (
-            <span className="text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono">
+            <span className="text-[16px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
               Collections
             </span>
           ),
@@ -462,7 +462,7 @@ const Structure = ({ children, title = "Holidify" })=>{
         {
           key: 9.2,
           label: (
-            <span className="text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono">
+            <span className="text-[16px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
               Maps
             </span>
           ),
@@ -470,16 +470,8 @@ const Structure = ({ children, title = "Holidify" })=>{
         {
           key: 9.3,
           label: (
-            <span className="text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono">
+            <span className="text-[16px] text-[#212529] hover:text-[#3d81bb] font-[manrope] hover:underline underline-offset-[26px] decoration-[7px]">
               Reviews & QnA
-            </span>
-          ),
-        },
-        {
-          key: 9.4,
-          label: (
-            <span className="text-[17.4px] text-[#333] hover:text-[#3d81bb] font-medium font-mono">
-              Travel Agents
             </span>
           ),
         },
@@ -692,6 +684,22 @@ const Structure = ({ children, title = "Holidify" })=>{
             <p>Some contents...</p>
             <p>Some contents...</p>
           </Drawer>
+        </nav>
+
+        {/* Bottom Nav */}
+        <nav
+          className={`${
+            scrollHeight >= 79 ? "fixed top-0 left-0" : ""
+          } w-full bg-[#FCFCFC] z-20 top-0 border-gray-200 dark:border-gray-600 shadow-lg`}
+        >
+          <div className="grid grid-cols-1 px-[8.9%]">
+            <Menu
+              theme="light"
+              mode="horizontal"
+              items={bottomNav}
+              className="pt-2 pb-[15px] border border-[3px] bg-[#fcfcff]"
+            />
+          </div>
         </nav>
       </header>
       <section>{children}</section>
