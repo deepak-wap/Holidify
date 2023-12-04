@@ -518,7 +518,7 @@ const Structure = ({ children, title = "Holidify" })=>{
       </Head>
       <header>
         {/* Top Nav */}
-        <nav className={`bg-white dark:bg-gray-900 w-full z-[100] top-0 border-b border-gray-200 dark:border-gray-600 pl-[8%] pr-[8.8%] ${scrollHeight > 150 ? 'fixed' : ''}`}>
+        <nav className={`bg-white dark:bg-gray-900 w-full z-[100] top-0 border-b border-gray-200 dark:border-gray-600 pl-[8%] pr-[8.8%]`}>
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-3 py-3">
             <Link
               href="/"
@@ -689,8 +689,8 @@ const Structure = ({ children, title = "Holidify" })=>{
         {/* Bottom Nav */}
         <nav
           className={`${
-            scrollHeight >= 79 ? "fixed top-0 left-0" : ""
-          } w-full bg-[#FCFCFC] z-20 top-0 border-gray-200 dark:border-gray-600 shadow-lg`}
+            scrollHeight >= 74 ? "fixed top-0 left-0" : ""
+          } w-full bg-[#FCFCFC] z-[50] top-0 border-gray-200 dark:border-gray-600 shadow-lg`}
         >
           <div className="grid grid-cols-1 px-[8.9%]">
             <Menu

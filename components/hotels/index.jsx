@@ -292,7 +292,7 @@ const Hotels = () => {
           <div className="col-span-8">
             <div className="px-2">
               <div className="absolute h-[355px] w-[825px] bg-black bg-opacity-[0.5] hover:bg-opacity-[0.6] rounded-[4px] z-20"></div>
-              <div className="h-[355px] w-[825px] rounded-[5px] overflow-hidden relative">
+              <div className="h-[355px] w-[825px] rounded-[5px] overflow-hidden relative mb-10">
                 <Image
                   src={"/images/package-1.jpg"}
                   width={720}
@@ -300,24 +300,181 @@ const Hotels = () => {
                   className="w-full h-[437px]"
                 />
                 <Breadcrumb
-                items={[
-                  {
-                    title: <a href="/" className="text-white">Home</a>,
-                  },
-                  {
-                    title: <a href="/">Goa Hotels</a>,
-                  },
-                ]}
-                className="absolute text-[13px] top-[16px] left-[16px] tracking-[0.4px] z-20"
-              />
-              <div className="top-[130px] px-[20px] z-20 absolute w-fit flex flex-col">
-                <h1 className="text-[24.6px] text-white font-[manrope] tracking-[0.3px] font-bold mt-[-12px] mb-4">
-                50 Hotels In Goa
+                  items={[
+                    {
+                      title: (
+                        <a href="/" className="text-white">
+                          Home
+                        </a>
+                      ),
+                    },
+                    {
+                      title: <a href="/">Goa Hotels</a>,
+                    },
+                  ]}
+                  className="absolute text-[13px] top-[16px] left-[16px] tracking-[0.4px] z-20"
+                />
+                <div className="top-[130px] px-[20px] z-20 absolute w-fit flex flex-col">
+                  <h1 className="text-[24.6px] text-white font-[manrope] tracking-[0.3px] font-bold mt-[-12px] mb-4">
+                    50 Hotels In Goa
+                  </h1>
+                  <p className="text-[16px] text-white font-[manrope] font-bold tracking-[0.4px] mb-4">
+                    Search Availability of For Your Dates
+                  </p>
+                  <div className="w-[775px] flex justify-center gap-2 mb-5">
+                    <div className="ml-[-7px] pl-[3px] w-[198px] h-[48px] bg-[#4F9CD8]  rounded-[5px] shadow-lg shadaw-[red] shadow-inner overflow-hidden">
+                      <div className="w-[195px] h-[48px] rounded-[4px] bg-white">
+                        <DatePicker
+                          className="check-in border-0"
+                          placeholder="Check In"
+                        />
+                      </div>
+                    </div>
+                    <div className="pl-[3px] w-[198px] h-[48px] bg-[#FF433E] rounded-[5px] shadow-lg shadow-inner overflow-hidden">
+                      <div className="w-[195px] h-[48px] rounded-[4px] bg-white">
+                        <DatePicker
+                          className="check-out border-0"
+                          placeholder="Check Out"
+                        />
+                      </div>
+                    </div>
+                    <div className="relative flex gap-2">
+                      <Image
+                        src={"/images/user.png"}
+                        width={20}
+                        height={22}
+                        className="absolute h-[22px] top-[13px] left-[8px]"
+                      />
+                      <select
+                        name="qty"
+                        className="pl-10 outline-none text-[#495057] font-[manrope] font-medium tracking-[0.5px] text-[16px] w-[205px] h-[49px] rounded-[5px] shadow-lg shadow-inner"
+                      >
+                        <option value="1">1 Adult</option>
+                        <option value="1">2 Adult</option>
+                        <option value="1">3 Adult</option>
+                        <option value="1">4 Adult</option>
+                        <option value="1">5 Adult</option>
+                        <option value="1">6 Adult</option>
+                        <option value="1">7 Adult</option>
+                        <option value="1">8 Adult</option>
+                        <option value="1">9 Adult</option>
+                        <option value="1">10 Adult</option>
+                        <option value="1">11 Adult</option>
+                        <option value="1">12 Adult</option>
+                        <option value="1">13 Adult</option>
+                        <option value="1">14 Adult</option>
+                        <option value="1">15 Adult</option>
+                        <option value="1">16 Adult</option>
+                        <option value="1">17 Adult</option>
+                        <option value="1">18 Adult</option>
+                        <option value="1">19 Adult</option>
+                        <option value="1">20 Adult</option>
+                        <option value="1">21 Adult</option>
+                        <option value="1">22 Adult</option>
+                        <option value="1">23 Adult</option>
+                        <option value="1">24 Adult</option>
+                        <option value="1">25 Adult</option>
+                        <option value="1">26 Adult</option>
+                        <option value="1">27 Adult</option>
+                        <option value="1">28 Adult</option>
+                        <option value="1">29 Adult</option>
+                        <option value="1">30 Adult</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="flex justify-center">
+                    <Button className="w-[400px] h-[54px] font-[manrope] text-[16px] text-white bg-gradient-to-r from-[#ff433a] to-[#ff577c] tracking-[0.3px] font-bold">
+                      Search For Your Dates
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[825px] mb-9">
+                <h1 className="text-[#212529] text-[16.3px] font-[manrope] font-bold tracking-[0.3px] mb-3">
+                  Guide for booking hotels in Goa:
                 </h1>
-                <p className="text-[16px] text-white font-[manrope] font-bold tracking-[0.4px] mb-4">
-                Search Availability of For Your Dates
+                <p className="texxt-[#212529] text-[14.6px] text-justify font-[manrope]">
+                  Goa’s rich Portuguese heritage and magnificent coastline have
+                  given this scenic destination a landscape that offers its
+                  guests plenty of options for picking the best hotels in Goa.
+                  Explore the serene beaches and watch stunning sunsets from the
+                  comfort of your room at the offbeat beach-side cottages and
+                  hotels in <b>South Goa.</b> <br /> <br />
+                  Parties are unmatched at the many spots near <b>
+                    Baga
+                  </b> and <b>Anjuna Beach</b>, with some of the best resorts
+                  just a hop, skip and jump away. If you’re a person hunting for
+                  culture and heritage, Panjim is the place to explore. Check
+                  out the hotels in <b>Old Goa</b> or <b>Fontainhas</b>, a
+                  neighbourhood frozen in time with endless shopping
+                  opportunities. If you are planning a family vacation, pick
+                  exotic Portuguese-style villas to great homestays, all without
+                  burning a hole in your pocket in the stunning beach getaway of
+                  Goa.
+                  <br />
+                  <br /> When travelling for work, the <b>Vasco</b> near the
+                  airport is the right pick. It has several stay options,
+                  including luxury hotels, budget hotels and homestays. The
+                  hotels are easily accessible and the neighbourhood has
+                  frequent buses operating from Panjim to the airport.
                 </p>
               </div>
+              <div className="w-[825px]">
+                <h1 className="text-[#212529] text-[16.3px] font-[manrope] font-bold tracking-[0.3px] mb-3">
+                  Top hotels in Goa by theme
+                </h1>
+                <div className="col-span-8 flex gap-10 mb-5">
+                  {[
+                    "Resorts",
+                    "Beach Resorts",
+                    "5-star Hotels",
+                    "Villas",
+                    "Best Hotels",
+                    "Near Beaches",
+                  ].map((name) => {
+                    return (
+                      <div className="flex flex-col items-start">
+                        <a
+                          href="/"
+                          className="flex flex-col items-center hover:underline"
+                        >
+                          <div className="w-[65px] h-[65px] rounded-[50%] overflow-hidden mb-1">
+                            <Image
+                              src={"/images/package-1.jpg"}
+                              width={65}
+                              height={65}
+                              className="w-[65px] h-[65px] rounded-[50%]"
+                            />
+                          </div>
+                          <p className="px-[6px] text-[#333333] text-[14.3px] font-[manrope]">
+                            {name}
+                          </p>
+                        </a>
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className="w-full grid grid-cols-2 items-center">
+                  <h1 className="text-[#212529] text-[16.3px] font-[manrope] font-bold tracking-[0.3px]">
+                    Showing all Hotels in Goa
+                  </h1>
+                  <div className="flex items-center ml-[90px]">
+                    <i class="bx bx-sort-alt-2 text-[28px]"></i>
+                    <h1 className="text-[#212529] text-[16.3px] font-[manrope] font-bold tracking-[0.3px] mr-2">
+                      Sort By:
+                    </h1>
+                    <select
+                      name="qty"
+                      className="outline-none border border-[1px] border-[#212529] text-[#000000] font-[manrope] font-medium tracking-[0.5px] text-[16px] w-[219px] h-[49px] rounded-[4px] shadow-lg shadow-inner"
+                    >
+                      <option value="1">Popularity</option>
+                      <option value="1">Lowset Price First</option>
+                      <option value="1">Highest Price First</option>
+                      <option value="1">Review Score</option>
+                      <option value="1">Distance From City Centre</option>
+                    </select>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

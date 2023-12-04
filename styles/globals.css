@@ -226,11 +226,15 @@ font-weight: 700;
     font-size: 17.57px !important;
   }
 
-  .anticon-calendar{
+  .check-in .anticon-calendar{
+    font-size: 18px !important;
+    color: #4F9CD8 !important;
+    margin-left: -175px !important;
+  }
+  .check-out .anticon-calendar{
     font-size: 18px !important;
     color: red !important;
     margin-left: -175px !important;
-
   }
 
   .ant-picker-input{
