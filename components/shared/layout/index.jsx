@@ -383,7 +383,7 @@ const Structure = ({ children, title = "Holidify" })=>{
       key: 1,
       label: (
         <span className="pb-3 text-[16.5px] tracking-[0.3px] text-[#212529] font-[manrope] hover:text-[#3d81bb] hover:underline underline-offset-[26px] decoration-[7px]">
-          Haridwar
+          Goa
         </span>
       ),
     },

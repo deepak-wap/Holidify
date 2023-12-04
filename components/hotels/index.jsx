@@ -16,7 +16,15 @@ import {
   EffectFade,
 } from "swiper/modules";
 import Structure from "../shared/layout";
-import { Button, Card, Menu, Input, DatePicker, Checkbox } from "antd";
+import {
+  Button,
+  Card,
+  Menu,
+  Input,
+  DatePicker,
+  Checkbox,
+  Breadcrumb,
+} from "antd";
 import { DownOutlined, SearchOutlined } from "@ant-design/icons";
 
 const Hotels = () => {
@@ -240,31 +248,40 @@ const Hotels = () => {
       <Structure title="hotels">
         <div className="grid grid-cols-12 px-[8.8%] py-8">
           <div className="col-span-3">
-            <Card className="p-0 m-0 shadow-md w-[263px]" >
+            <Card className="p-0 m-0 shadow-md w-[263px]">
               <div className="w-full ml-[-9px] mt-[-2px]">
                 <div className="w-full flex justify-between mb-[18px]">
-                    <span className="text-[#212529] text-[16px] font-[manrope] font-bold tracking-[0.3px]">
-                      Filter By
-                    </span>
-                    <span className="text-[#949494] text-[16.45px] font-[manrope] tracking-[0.3px] mr-[-24px] mt-[-1px] hover:underline cursor-pointer">
-                      Reset All
-                    </span>
+                  <span className="text-[#212529] text-[16px] font-[manrope] font-bold tracking-[0.3px]">
+                    Filter By
+                  </span>
+                  <span className="text-[#949494] text-[16.45px] font-[manrope] tracking-[0.3px] mr-[-24px] mt-[-1px] hover:underline cursor-pointer">
+                    Reset All
+                  </span>
                 </div>
 
                 <div className="main pl-2 ml-[-9px]">
-                  <div className="mb-7"> {/* repeat */}
+                  <div className="mb-7">
+                    {" "}
+                    {/* repeat */}
                     <div className="mb-4">
                       <h2 className="text-[#212529] text-[16.3px] font-[manrope] font-bold tracking-[0.3px]">
                         Popular Filters
                       </h2>
                     </div>
-                    <div className="flex gap-2 mb-2"> {/* repeat */}
-                      <Checkbox defaultChecked={true} className="text-[#212529]"/>
+                    <div className="flex gap-2 mb-2">
+                      {" "}
+                      {/* repeat */}
+                      <Checkbox
+                        defaultChecked={true}
+                        className="text-[#212529]"
+                      />
                       <div className="w-full flex justify-between">
                         <span className="text-[#212529] text-[14.6px] font-[manrope]">
                           Breakfast Included
                         </span>
-                        <span className="text-[#949494] text-[14.6px] font-[manrope] mr-[-19px]">363</span>
+                        <span className="text-[#949494] text-[14.6px] font-[manrope] mr-[-19px]">
+                          363
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -273,11 +290,36 @@ const Hotels = () => {
             </Card>
           </div>
           <div className="col-span-8">
-            <Swiper>
-              <SwiperSlide>
-                {/* <Image /> */}
-              </SwiperSlide>
-            </Swiper>
+            <div className="px-2">
+              <div className="absolute h-[355px] w-[825px] bg-black bg-opacity-[0.5] hover:bg-opacity-[0.6] rounded-[4px] z-20"></div>
+              <div className="h-[355px] w-[825px] rounded-[5px] overflow-hidden relative">
+                <Image
+                  src={"/images/package-1.jpg"}
+                  width={720}
+                  height={480}
+                  className="w-full h-[437px]"
+                />
+                <Breadcrumb
+                items={[
+                  {
+                    title: <a href="/" className="text-white">Home</a>,
+                  },
+                  {
+                    title: <a href="/">Goa Hotels</a>,
+                  },
+                ]}
+                className="absolute text-[13px] top-[16px] left-[16px] tracking-[0.4px] z-20"
+              />
+              <div className="top-[130px] px-[20px] z-20 absolute w-fit flex flex-col">
+                <h1 className="text-[24.6px] text-white font-[manrope] tracking-[0.3px] font-bold mt-[-12px] mb-4">
+                50 Hotels In Goa
+                </h1>
+                <p className="text-[16px] text-white font-[manrope] font-bold tracking-[0.4px] mb-4">
+                Search Availability of For Your Dates
+                </p>
+              </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="mt-5 px-[8.8%]">

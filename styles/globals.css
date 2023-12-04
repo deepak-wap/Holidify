@@ -287,6 +287,7 @@ font-weight: 700;
     height: 24px !important;
   }
 
-  /* .ant-checkbox-inner::after {
-    font-size: 20px !important;
-  } */
+  .ant-breadcrumb-link a, .ant-breadcrumb-separator{
+    color: white !important;
+    margin: 0 !important;
+  }
