@@ -295,3 +295,7 @@ font-weight: 700;
     color: white !important;
     margin: 0 !important;
   }
+
+.ant-card-body{
+    padding: 10px 0 !important;
+  }

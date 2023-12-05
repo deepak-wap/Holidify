@@ -25,7 +25,7 @@ import {
   Checkbox,
   Breadcrumb,
 } from "antd";
-import { DownOutlined, SearchOutlined } from "@ant-design/icons";
+import { DownOutlined, RightOutlined, SearchOutlined } from "@ant-design/icons";
 
 const Hotels = () => {
   const countries = [
@@ -389,11 +389,11 @@ const Hotels = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[825px] mb-9">
+              <div className="w-[825px] h-[100px] overflow-hidden mb-4 relative">
                 <h1 className="text-[#212529] text-[16.3px] font-[manrope] font-bold tracking-[0.3px] mb-3">
                   Guide for booking hotels in Goa:
                 </h1>
-                <p className="texxt-[#212529] text-[14.6px] text-justify font-[manrope]">
+                <p className="texxt-[#3d81bb] text-[14.6px] text-justify font-[manrope]">
                   Goa’s rich Portuguese heritage and magnificent coastline have
                   given this scenic destination a landscape that offers its
                   guests plenty of options for picking the best hotels in Goa.
@@ -418,7 +418,11 @@ const Hotels = () => {
                   hotels are easily accessible and the neighbourhood has
                   frequent buses operating from Panjim to the airport.
                 </p>
+                <div className="absolute bottom-0 bg-[#ffffff80] w-full h-[15px]"></div>
               </div>
+              <p className="text-[#3d81bb] text-[14.6px] font-[manrope] font-bold mb-9">
+                (Read More)
+              </p>
               <div className="w-[825px]">
                 <h1 className="text-[#212529] text-[16.3px] font-[manrope] font-bold tracking-[0.3px] mb-3">
                   Top hotels in Goa by theme
@@ -454,7 +458,7 @@ const Hotels = () => {
                     );
                   })}
                 </div>
-                <div className="w-full grid grid-cols-2 items-center">
+                <div className="w-full grid grid-cols-2 items-center mb-5">
                   <h1 className="text-[#212529] text-[16.3px] font-[manrope] font-bold tracking-[0.3px]">
                     Showing all Hotels in Goa
                   </h1>
@@ -475,90 +479,92 @@ const Hotels = () => {
                     </select>
                   </div>
                 </div>
+                <div className="grid grid-cols-2">
+                  <Card className="shadow-inner">
+                    <h1 className="text-[#212529] text-[20px] font-[manrope] font-bold tracking-[0.3px] px-4 mb-2">
+                      1. White Truffle Resort, Arambol
+                    </h1>
+                    <div className="mb-4">
+                      <Image
+                        src={"/images/UDAIPUR.jpg"}
+                        width={720}
+                        height={480}
+                      />
+                    </div>
+                    <div className="flex mb-2">
+                      <div className="relative flex gap-2 px-3">
+                        <Image
+                          src={"/images/location-pin.png"}
+                          width={22}
+                          height={22}
+                          className="z-[1]"
+                        />
+                        <RightOutlined className="absolute top-[2px] left-[25px]" />
+                        <span className="text-gray-700 text-[12.6px] font-[manrope] font-medium">
+                          Arambol
+                        </span>
+                        <span className="text-gray-700 text-[12.6px] font-[manrope] font-medium">
+                          <i class="bx bxs-circle text-gray-400 text-[5px] font-[manrope] mr-[5px]"></i>
+                          <span>3.8 kms from Mandrem Beach</span>
+                        </span>
+                      </div>
+                      <div
+                        className={`absolute right-[10px] text-[14px] text-white font-[manrope] font-bold bg-[#247C2A] flex items-center px-[10px] py-1 rounded-[4px]`}
+                      >
+                        9.6
+                      </div>
+                    </div>
+                    <div className="flex justify-between pl-5 pr-3">
+                      <span className="text-gray-700 text-[12.6px] font-[manrope]">
+                        # 1 hotel in Goa
+                      </span>
+                      <span className="text-gray-500 text-[12.6px] font-[manrope] pt-[5px]">
+                        (50 reviews)
+                      </span>
+                    </div>
+                    <div className="flex gap-1 px-5 mb-2">
+                      <i class="bx bxs-star text-[12px]"></i>
+                      <i class="bx bxs-star text-[12px]"></i>
+                      <i class="bx bxs-star text-[12px]"></i>
+                    </div>
+                    <p className="text-gray-700 text-[14.5px] font-[manrope] px-5 mb-3">
+                      Facilities: Parking , Wifi , Bar , Pool , Food
+                    </p>
+                    <div className="flex items-center gap-1 px-5 mb-3">
+                      <i class="bx bx-check text-[16px] text-[#499FDC] font-bold"></i>
+                      <span className="text-gray-700 text-[12.6px] font-[manrope]">
+                        Hotel with only 1 room option
+                      </span>
+                    </div>
+                    <div className="flex justify-between pl-5 pr-3">
+                      <div>
+                        <p className="mb-1">
+                          <span className="text-[#237c74] text-[20px] font-[Helvetica]">
+                            ₹
+                          </span>
+                          <span className="text-[#237c74] text-[20px] font-[manrope] font-bold mr-1">
+                            2,500
+                          </span>
+                          <span className="text-gray-500 text-[14.5px] font-[manrope]">
+                            onwards
+                          </span>
+                        </p>
+                        <p className="text-[14px] font-[manrope] font-extrabold">
+                          <span className="text-[#273B7C]">Booking</span>
+                          <span className="text-[#50A3DE]">.com</span>
+                        </p>
+                      </div>
+                      <div>
+                        <Button className="flex items-center px-4 h-[52px] font-[manrope] text-[15px] text-white bg-gradient-to-r from-[#ff433a] to-[#ff577c] tracking-[0.3px] font-bold">
+                          View Deal <i class='bx bx-chevron-right text-white'></i>
+                        </Button>
+                      </div>
+                    </div>
+                  </Card>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="mt-5 px-[8.8%]">
-          <h1 className="text-[25px]  font-[manrope] tracking-[0.3px] font-bold mb-2">
-            Hotels & places to stay
-          </h1>
-          <p className="text-[16.5px] text-[#212529] font-[manrope] tracking-[0.6px] mb-4">
-            Top stay options curated by Holidify for your travel needs
-          </p>
-          <Card className="shadow-lg pt-4 pb-11">
-            <Input
-              prefix={<SearchOutlined className="text-[#020202] text-[20px]" />}
-              placeholder="Enter City Name"
-              className="ml-[-7px] w-[697px] py-[17px] text-[#495057] text-[17px] font-[manrope] mb-4"
-            />
-            <div className="flex gap-9">
-              <div className="ml-[-7px] pl-[3px] w-[198px] h-[48px] bg-[#4F9CD8]  rounded-[5px] shadow-lg shadaw-[red] shadow-inner overflow-hidden">
-                <div className="w-[195px] h-[48px] rounded-[4px] bg-white">
-                  <DatePicker
-                    className="check-in border-0"
-                    placeholder="Check In"
-                  />
-                </div>
-              </div>
-              <div className="flex gap-2">
-                <div className="ml-[-7px] pl-[3px] w-[198px] h-[48px] bg-[#4F9CD8] rounded-[5px] shadow-lg shadow-inner overflow-hidden">
-                  <div className="w-[195px] h-[48px] rounded-[4px] bg-white">
-                    <DatePicker
-                      className="check-out border-0"
-                      placeholder="Check Out"
-                    />
-                  </div>
-                </div>
-                <div className="relative flex gap-2">
-                  <Image
-                    src={"/images/user.png"}
-                    width={20}
-                    height={22}
-                    className="absolute h-[22px] top-[13px] left-[8px]"
-                  />
-                  <select
-                    name="qty"
-                    className="pl-10 outline-none text-[#495057] font-[manrope] font-medium tracking-[0.5px] text-[16px] w-[205px] h-[49px] rounded-[5px] shadow-lg shadow-inner"
-                  >
-                    <option value="1">1 Adult</option>
-                    <option value="1">2 Adult</option>
-                    <option value="1">3 Adult</option>
-                    <option value="1">4 Adult</option>
-                    <option value="1">5 Adult</option>
-                    <option value="1">6 Adult</option>
-                    <option value="1">7 Adult</option>
-                    <option value="1">8 Adult</option>
-                    <option value="1">9 Adult</option>
-                    <option value="1">10 Adult</option>
-                    <option value="1">11 Adult</option>
-                    <option value="1">12 Adult</option>
-                    <option value="1">13 Adult</option>
-                    <option value="1">14 Adult</option>
-                    <option value="1">15 Adult</option>
-                    <option value="1">16 Adult</option>
-                    <option value="1">17 Adult</option>
-                    <option value="1">18 Adult</option>
-                    <option value="1">19 Adult</option>
-                    <option value="1">20 Adult</option>
-                    <option value="1">21 Adult</option>
-                    <option value="1">22 Adult</option>
-                    <option value="1">23 Adult</option>
-                    <option value="1">24 Adult</option>
-                    <option value="1">25 Adult</option>
-                    <option value="1">26 Adult</option>
-                    <option value="1">27 Adult</option>
-                    <option value="1">28 Adult</option>
-                    <option value="1">29 Adult</option>
-                    <option value="1">30 Adult</option>
-                  </select>
-                  <Button className="px-4 h-[54px] font-[manrope] text-[16px] text-white bg-gradient-to-r from-[#ff433a] to-[#ff577c] tracking-[0.3px] font-bold">
-                    Search For Your Dates
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </Card>
         </div>
 
         <div className="pl-[8.9%] pr-[8.9%]">
