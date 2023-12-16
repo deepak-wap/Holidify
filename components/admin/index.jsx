@@ -3,6 +3,7 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   UserOutlined,
+  UsergroupAddOutlined,
   SettingOutlined,
   DashboardOutlined,
   MessageOutlined,
@@ -38,6 +39,11 @@ const Admin = ({ children }) => {
               icon: <DashboardOutlined />,
               label: <Link href="/admin">Dashboard</Link>,
             },
+            {
+              key: "2",
+              icon: <UsergroupAddOutlined />,
+              label: <Link href="/admin/country">Country</Link>,
+            },
           ]}
         />
       </Sider>
@@ -52,10 +58,7 @@ const Admin = ({ children }) => {
           <div className="flex ">
             <Button
               type="text"
-              icon={
-                collapsed ? <MenuUnfoldOutlined className="text-[black]" /> : 
-                <MenuFoldOutlined className="text-[black]"/>
-              }
+              icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
               onClick={() => setCollapsed(!collapsed)}
               style={{
                 fontSize: "16px",
