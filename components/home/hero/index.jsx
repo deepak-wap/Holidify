@@ -7,7 +7,8 @@ const Hero = ()=>{
     return (
         <>
             <div className="pl-[8.9%] pr-[8.9%]">
-                <div className="absolute h-[460px] w-[1110px] bg-black bg-opacity-50 z-20"></div>
+                <div className="absolute flex justify-end items-end px-8 py-6 h-[460px] w-[1110px] bg-black bg-opacity-40 z-20 hover:bg-opacity-50">
+                </div>
                 <Swiper
                     // install Swiper modules
                     modules={[Autoplay, Navigation,Pagination, Scrollbar, A11y, EffectFade]}
@@ -18,32 +19,43 @@ const Hero = ()=>{
                         disableOnInteraction: false,
                     }}
                     effect='fade'
-                    // initialSlide={2}
-                    // navigation
                     pagination={{ clickable: true}}
-                    // scrollbar={{ draggable: true }}
-                    // onSwiper={(swiper) => console.log(swiper)}
-                    // onSlideChange={() => console.log('slide change')}
                     className="rounded-[4px] relative"
                 >
                     <SwiperSlide>
-                        <div className="h-[460px] w-[110] overflow-hidden">
+                        <div className="h-[460px] w-[110] overflow-hidden relative">
                             <Image src={'/images/UDAIPUR.jpg'} width={1110} height={460}/>
+                            <p className='absolute bottom-[26px] right-[0px] px-8 flex items-center text-white text-[17px] tracking-[0.3px] italic'>
+                                <img src="images/gps.png" width={37} alt="" />
+                                Maldives
+                            </p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="h-[460px] overflow-hidden">
                             <Image src={'/images/JAIPUR.jpg'} width={1110} height={460}/>
+                            <p className='absolute bottom-[26px] right-[0px] px-8 flex items-center text-white text-[17px] tracking-[0.3px] italic'>
+                                <img src="images/gps.png" width={37} alt="" />
+                                Africa
+                            </p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="h-[460px] overflow-hidden">
                             <Image src={'/images/UDAIPUR.jpg'} width={1110} height={460}/>
+                            <p className='absolute bottom-[26px] right-[0px] px-8 flex items-center text-white text-[17px] tracking-[0.3px] italic'>
+                                <img src="images/gps.png" width={37} alt="" />
+                                Goa
+                            </p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="h-[460px] overflow-hidden">
                             <Image src={'/images/UDAIPUR.jpg'} width={1110} height={460}/>
+                            <p className='absolute bottom-[26px] right-[0px] px-8 flex items-center text-white text-[17px] tracking-[0.3px] italic'>
+                                <img src="images/gps.png" width={37} alt="" />
+                                Dubai
+                            </p>
                         </div>
                     </SwiperSlide>
                 </Swiper>

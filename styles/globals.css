@@ -48,6 +48,24 @@ body {
   text-overflow: '';
 }
 
+.ant-dropdown-menu{
+  width: 498px !important;
+  height: 400px !important;
+  border-radius: 4px !important;
+  margin-top: 0px !important;
+  display: flex !important;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px 5px !important;
+}
+
+.ant-dropdown-menu-item,.ant-dropdown-menu-title-content{
+  background-color: white !important;
+  border: white !important;
+  outline: none !important;
+
+}
+
 /* Example CSS to change the dropdown color */
 /* class="ant-menu ant-menu-root ant-menu-inline ant-menu-light custom-dropdown-menu css-dev-only-do-not-override-xu9wm8" */
 .ant-drawer-body{
@@ -175,6 +193,8 @@ font-weight: 700;
 }
 
 .swiper-pagination-bullet{
+  width: 7px !important;
+  height: 7px !important;
   background-color: rgb(255, 255, 255,0.5) !important;
   opacity: 1 !important;
 }
