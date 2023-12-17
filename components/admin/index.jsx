@@ -44,6 +44,16 @@ const Admin = ({ children }) => {
               icon: <UsergroupAddOutlined />,
               label: <Link href="/admin/country">Country</Link>,
             },
+            {
+              key: "3",
+              icon: <UsergroupAddOutlined />,
+              label: <Link href="/admin/state">State</Link>,
+            },
+            {
+              key: "4",
+              icon: <UsergroupAddOutlined />,
+              label: <Link href="/admin/city">City</Link>,
+            },
           ]}
         />
       </Sider>
